@@ -1,5 +1,3 @@
-
-
 console.log("Start-up");
 
 function tapone() {
