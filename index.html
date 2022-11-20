@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon/favicon.ico">    
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <title>start page</title>
-</head>
-<body>
-    <h1 class="welcome_text">welcome!</h1>
-    <input id="button1" type="button" value="push button" onclick="push_button1()">
-    <input id="button2" type="button" value="push" onclick="tapone()">
-    
-    
-    
-    
-    
-    
-    <script src="javascript/script.js"></script>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon/favicon.ico">
+        <link href="style/style.css" rel="stylesheet" />
+        <title>start page</title>
+    </head>
+
+    <body>
+        <h1 class="welcome_text">welcome!</h1>
+        <div id="T1"></div>
+        <input type="button" value="パスワードを入力して秘密へアクセスする" onclick="password_gate()">
+        <br><input id="button1" type="button" value="push button" onclick="push_button1()">
+        <input id="button2" type="button" value="push" onclick="tapone()">
+        <input id="music_play1" type="button" value="music play">
+        <script src="javascript/script.js"></script>
+        <h3>知っている人は入力して下さい</h3>
+        <form method="POST" action="sample.cgi">
+            <div>username:<input type="text" name="name"></div>
+            <div>password:<input type="text" name="addr"></div>
+            <input type="submit" value="送信">
+            <input type="reset" value="取消">
+            <br><a href="opinion_box.html">意見ボックス</a>
+        </form>
+    </body>
+
 </html>

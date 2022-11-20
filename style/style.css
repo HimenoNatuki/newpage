@@ -1,0 +1,12 @@
+.welcome_text {
+    color: red;
+}
+
+.T1 {
+    color: red;
+}
+
+body {
+    background-size: cover;
+    background-image: url("image/aaa.jpg");
+}
